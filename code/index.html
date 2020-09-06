@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loading.css" />
+    <script src="//at.alicdn.com/t/font_1804115_k50qfg2l5dn.js"></script>
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+      .site-welcome {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: #bdc3c7;
+      }
+      .site-welcome.active {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="siteWelcome" class="site-welcome active">
+      <div class="loadding"></div>
+    </div>
+    <div id="topNavBar" class="topNavBar">
+      <div class="topNavBar-inner clearfix">
+        <a class="logo" href="##" alt="logo" style="float: left;">
+          <span class="rs">RS</span><span class="card">card</span>
+        </a>
+        <nav class="menu" style="float: right;">
+          <ul class="clearfix">
+            <li><a href="#siteAbout">ABOUT</a></li>
+            <li><a href="#siteSkills">SKILLS</a></li>
+            <li>
+              <a href="#siteWorks">PORTFOLIO</a>
+              <ul class="submenu">
+                <li>作品 1</li>
+                <li>作品 2</li>
+                <li>作品 3</li>
+              </ul>
+            </li>
+            <li><a href="##">EXPERIENCE</a></li>
+            <li>
+              <a href="##">BLOG</a>
+              <ul class="submenu">
+                <li>博客 1</li>
+                <li>博客 2</li>
+                <li>博客 3</li>
+              </ul>
+            </li>
+            <li><a href="##">CALENDAR</a></li>
+            <li><a href="##">CONTACT</a></li>
+            <li><a href="##">OTHER</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+
+    <main>
+      <div data-x id="siteAbout" class="userCard">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img
+              src="./image/startuper-hover-1-598x644.jpg"
+              width="299px"
+              height="347px"
+              alt="头像"
+            />
+          </div>
+          <div class="text">
+            <span class="welcome"
+              >Hello
+              <span class="triangle"></span>
+            </span>
+            <h1>Tranfalgar</h1>
+            <p>全栈工程师</p>
+            <hr />
+
+            <dl>
+              <dt>年龄</dt>
+              <dd>20</dd>
+              <dt>所在城市</dt>
+              <dd>北京</dd>
+              <dt>邮箱</dt>
+              <dd>1286015267@qq.com</dd>
+              <dt>手机</dt>
+              <dd>1580000000</dd>
+            </dl>
+          </div>
+        </div>
+        <footer class="media">
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-bokeyuan"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-CN_jianshu"></use></svg
+          ></a>
+          <a href="#"
+            ><svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-csdn"></use></svg
+          ></a>
+        </footer>
+      </div>
+      <p class="downloadResume-wrapper">
+        <a class="downloadResume" href="./resume.pdf" target="_blank" download
+          >下载pdf简历</a
+        >
+      </p>
+
+      <p class="selfIntroduction">
+        你好！ 我是Trafalgar。 专门从事前端开发的高级Web开发人员。
+        在动态Web项目的开发周期的<br />所有阶段都有经验。
+        精通多种编程语言，包括JavaScript，SQL和C。在项目管理和客户关系方面具有Stng背景。
+      </p>
+    </main>
+    <section data-x id="siteSkills" class="skill">
+      <h2>技能</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>HTML5&CSS3</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>jQuery</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue.js</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React.js</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Node.js</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section data-x id="siteWorks" class="portfolio">
+      <h2>作品集</h2>
+      <nav>
+        <ol class="clearfix">
+          <li id="portfolio1">所有</li>
+          <li id="portfolio2">框架</li>
+          <li id="portfolio3">原生JS&CSS</li>
+        </ol>
+        <div id="portfolioBar" class="bar">
+          <div class="bar-inner"></div>
+        </div>
+      </nav>
+      <script>
+        portfolio1.onclick = function () {
+          portfolioBar.className = "bar state-1";
+        };
+        portfolio2.onclick = function () {
+          portfolioBar.className = "bar state-2";
+        };
+        portfolio3.onclick = function () {
+          portfolioBar.className = "bar state-3";
+        };
+      </script>
+
+      <div class="works">
+        <div class="big">
+          <img src="./image/1.jpg" alt="作品1" />
+        </div>
+        <div class="small">
+          <img src="./image/2.jpg" alt="作品2" />
+        </div>
+        <div class="small">
+          <img src="./image/3.jpg" alt="作品3" />
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
