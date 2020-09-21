@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./loading.css" />
     <script src="//at.alicdn.com/t/font_1804115_k50qfg2l5dn.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <style type="text/css">
       .icon {
         width: 1em;
@@ -39,10 +45,10 @@
     </div>
     <div id="topNavBar" class="topNavBar">
       <div class="topNavBar-inner clearfix">
-        <a class="logo" href="##" alt="logo" style="float: left;">
+        <a class="logo" href="##" alt="logo" style="float: left">
           <span class="rs">RS</span><span class="card">card</span>
         </a>
-        <nav class="menu" style="float: right;">
+        <nav class="menu" style="float: right">
           <ul class="clearfix">
             <li><a href="#siteAbout">ABOUT</a></li>
             <li><a href="#siteSkills">SKILLS</a></li>
@@ -76,6 +82,33 @@
     </div>
 
     <main>
+      <style>
+        .swiper-container {
+          width: 600px;
+          height: 300px;
+        }
+      </style>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
       <div data-x id="siteAbout" class="userCard">
         <div class="pictureAndText clearfix">
           <div class="picture">
@@ -222,5 +255,28 @@
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="./main.js"></script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        //direction: "vertical",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        //scrollbar: {
+        //el: ".swiper-scrollbar",
+        //},
+      });
+    </script>
   </body>
 </html>
