@@ -93,7 +93,7 @@
               >Hello
               <span class="triangle"></span>
             </span>
-            <h1>Tranfalgar</h1>
+            <h1>Trafalgar</h1>
             <p>全栈工程师</p>
             <hr />
 
@@ -210,10 +210,22 @@
 
      
     </section>
+    <section class="message">
+      <h2>留言</h2>
+      <ol id="messageList"></ol>
+      <form action="" id="postMessage" style="width:700px;margin:50px auto;">
+        昵称：<input type="text" name="name" >
+        内容：<input type="text" name="content">
+
+        <input type="submit" value="提交">
+      </form>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/message.js"></script>
     
   </body>
 </html>
